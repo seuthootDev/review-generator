@@ -71,3 +71,17 @@ npm run dev
 - Gemini API 키가 필요합니다.
 - 리뷰 생성에는 약간의 시간이 소요될 수 있습니다.
 - 적절한 해시태그와 카테고리 입력이 필요합니다.
+
+## 스크린샷 📱
+
+<div style="display: flex; gap: 10px; justify-content: center;">
+  <img src="screenshots/1.png" width="200" alt="카페" />
+  <img src="screenshots/2.png" width="200" alt="떡볶이" />
+  <img src="screenshots/3.png" width="200" alt="복싱" />
+</div>
+> 카페, 식당 리뷰부터 복싱장 같은 체육시설 리뷰까지 다양한 장소의 리뷰를 생성할 수 있습니다! 🏃‍♂️☕️��
+
+### 리뷰 생성 중 화면 (약 2~3초 소요)
+<img src="screenshots/4.png" width="200" alt="리뷰 생성 중" />
+
+## 라이선스 📄
