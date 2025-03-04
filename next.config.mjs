@@ -21,7 +21,12 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  env: {
+    APIKEY: process.env.APIKEY,
+  },
 }
+
+export default nextConfig
 
 mergeConfig(nextConfig, userConfig)
 
@@ -44,5 +49,3 @@ function mergeConfig(nextConfig, userConfig) {
     }
   }
 }
-
-export default nextConfig
