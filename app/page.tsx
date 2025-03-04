@@ -6,8 +6,9 @@ import { Toaster } from "@/components/ui/toaster"
 import { useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react"
 import { generateReviews } from "../pages/api/run-api"
+import { Suspense } from "react"
 
-export default function Home() {
+function ReviewContent() {
   const searchParams = useSearchParams()
   const [reviews, setReviews] = useState<string[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -73,6 +74,25 @@ export default function Home() {
 
       <Toaster />
     </main>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <main className="container mx-auto px-4 py-6 md:py-8 max-w-4xl">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent font-pretendard tracking-tight">
+            AI 리뷰 생성기
+          </h1>
+          <p className="mt-3 text-lg md:text-xl text-muted-foreground font-pretendard">
+            로딩중...
+          </p>
+        </div>
+      </main>
+    }>
+      <ReviewContent />
+    </Suspense>
   )
 }
 
