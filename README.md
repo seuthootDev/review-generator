@@ -75,9 +75,9 @@ npm run dev
 ## 스크린샷 📱
 
 <div style="display: flex; gap: 10px; justify-content: center;">
-  <img src="screenshots/1.png" width="200" height="600" alt="카페" />
-  <img src="screenshots/2.png" width="200" height="600" alt="떡볶이" />
-  <img src="screenshots/3.png" width="200" height="600" alt="복싱" />
+  <img src="screenshots/1.png" width="250" height="600" alt="카페" />
+  <img src="screenshots/2.png" width="250" height="600" alt="떡볶이" />
+  <img src="screenshots/3.png" width="250" height="600" alt="복싱" />
 </div>
 > 카페, 식당 리뷰부터 복싱장 같은 체육시설 리뷰까지 다양한 장소의 리뷰를 생성할 수 있습니다! 🏃‍♂️☕️��
 
